@@ -1,29 +1,7 @@
-# Instructions
-
-- clone this repo and open with your favorite code editor
-
-- make sure you are checked out to `master` branch
-
-- to run the app `npm install` then `npm start`
-
-## Please fix the following issues
-
-1.  In the title of the header, it displays `5 orders` but there are `6 orders` in the table. We want to display the `total` number of `orders` in the header title
-
-2.  In the table order submitted date is missing, we have timestamp data included in the `src\assets\timeStamps.json` with the corresponding ids, please combine that with the order data and make sure the order submitted date is being displayed in the table
-
-3.  Order Volume cell is displaying USD values, can you please make it display the currency value selected on the dropdown located in the header of the dashboard
-
-4.  Can you please add search feature on the order IDs with the search bar given in the header
-
-5.  Please clear the console errors and warnings.
-
-6.  When user selects an order, can you populate the Card on top of the listing component as shown in the image
-
-![alt text](dashboard.JPG)
-
-## Bonus
-
-- run storybook `npm run storybook`
-
-1. Please add storybook to one of the components
+1. to change the order number from 5 to 6, we can calculate mock.data.length , it will then show the correct output
+2. for table order submitted data to be shown, I have fetch it from timeStamps.json and displayed it over the table
+3. for the dropdown menu, I have fetched the data from json files to display the data as per users choice
+4. for searching purpose, I have first changed the text into lowercase and then filter method to get the id to be diplayed
+5. to remove the error from console,I have used the index to give the unique value to all the row
+6. to display the tables , I have fetched the data and also used css to make them together.
+7. for bonus question:   I have made two js files, List.stories.js and Search.stories.js and displayed the List component the site by using npm run storybook command over the terminal.
